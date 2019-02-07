@@ -14,7 +14,10 @@ public class PointTest {
 
 	@Test
 	public void testPointIntInt() {
-		fail("Not yet implemented");
+		Point p = new Point(0, 0);
+		int expected = 0;
+		int actual = p.getX();
+		assertEquals(expected, actual);
 	
 	}
 	
