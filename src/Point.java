@@ -1,3 +1,4 @@
+//import java.awt.Point;
 
 public class Point {
 	private int x;
@@ -8,12 +9,18 @@ public class Point {
 		this(0,0);
 		System.out.println("Using a default constructor");
 	}
+	
 	public Point(int x, int y) {
 		if ( x >= 0)
 			this.x = x;
 		if (y >= 0)
 			this.y = y;
 		++counter;
+	}
+	
+	public Point(Point p) {
+		this.x = p.getX();
+		this.y = p.getY();
 	}
 	
 	public int getX() {
