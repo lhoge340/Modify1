@@ -5,8 +5,6 @@ public class Rectangle {
 	private Point rightUpper;
 	private Point rightLower;
 	
-
-
 	public Rectangle(Point leftUpper, Point leftLower, Point rightUpper, Point rightLower) {
 		
 		this.leftUpper = leftUpper;
@@ -15,63 +13,43 @@ public class Rectangle {
 		this.rightLower = rightLower;
 	}
 
-
-
 	public Point getLeftUpper() {
 		return leftUpper;
 	}
-
-
 
 	public void setLeftUpper(Point leftUpper) {
 		this.leftUpper = leftUpper;
 	}
 
-
-
 	public Point getLeftLower() {
 		return leftLower;
 	}
-
-
 
 	public void setLeftLower(Point leftLower) {
 		this.leftLower = leftLower;
 	}
 
-
-
 	public Point getRightUpper() {
 		return rightUpper;
 	}
-
-
 
 	public void setRightUpper(Point rightUpper) {
 		this.rightUpper = rightUpper;
 	}
 
-
-
 	public Point getRightLower() {
 		return rightLower;
 	}
 
-
-
 	public void setRightLower(Point rightLower) {
 		this.rightLower = rightLower;
 	}
-
-
 
 	@Override
 	public String toString() {
 		return "Rectangle [leftUpper=" + leftUpper + ",\n leftLower=" + leftLower + ",\n rightUpper=" + rightUpper
 				+ ",\n rightLower=" + rightLower + "]";
 	}
-
-
 
 	public static void main(String[] args) {
 		Rectangle rec = new Rectangle(new Point(0, 1), new Point(0,0), 
@@ -82,6 +60,9 @@ public class Rectangle {
 		pointRef.setY(100);
 		
 		System.out.println(rec);
+		
+		//Added code to check counter
+		System.out.print(Point.getCounter());
 
 	}
 

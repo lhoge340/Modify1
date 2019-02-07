@@ -8,7 +8,7 @@ public class Point {
 		this(0,0);
 		System.out.println("Using a default constructor");
 	}
-	public Point(int inX, int y) {
+	public Point(int x, int y) {
 		if ( x >= 0)
 			this.x = x;
 		if (y >= 0)
@@ -33,5 +33,9 @@ public class Point {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
 	
+	//Added code to test counter
+	public static int getCounter() {
+		return counter;
+	}
 
 }
